@@ -14,8 +14,8 @@ const indexRouter = require("./routes/index");
 const routes = require("./routes/api");
 
 //Database connection
-//const DATABASE_URI ="mongodb+srv://atlasbookshop:atlasbookshop2020@cluster0-xtbzt.mongodb.net/atlasbookshop?retryWrites=true&w=majority";
-//mongoose.connect(DATABASE_URI || "mongodb://localhost/mernstack2020"
+//const DATABASE_URI ="database_link_goes_here";
+//mongoose.connect(DATABASE_URI || "mongodb://localhost/database_name"
 mongoose.connect("mongodb://localhost/mernstack2020", {
   useNewUrlParser: true,
   useUnifiedTopology: true,

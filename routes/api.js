@@ -11,18 +11,18 @@ const Post = require("../models/Post");
 //   res.send("All Posts");
 // });
 
-router.get("/", (req, res) => {
-  Post.find({})
-    .then((data) => {
-      console.log("Data: ", data);
-      res.json(data);
-    })
-    .catch((error) => {
-      console.log("error: ", error);
-    });
-});
+// router.get("/", (req, res) => {
+//   Post.find({})
+//     .then((data) => {
+//       console.log("Data: ", data);
+//       res.json(data);
+//     })
+//     .catch((error) => {
+//       console.log("error: ", error);
+//     });
+// });
 
-//Post to routes/api
+// //Post to routes/api
 
 router.post("/save", (req, res) => {
   const data = req.body;

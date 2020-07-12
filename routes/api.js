@@ -1,0 +1,44 @@
+const express = require("express");
+const router = express.Router();
+//Bring the model
+const Post = require("../models/Post");
+
+//@route GET api/posts
+//@desc GET all posts
+//@access public
+
+// router.get("/", async (req, res) => {
+//   res.send("All Posts");
+// });
+
+router.get("/", (req, res) => {
+  Post.find({})
+    .then((data) => {
+      console.log("Data: ", data);
+      res.json(data);
+    })
+    .catch((error) => {
+      console.log("error: ", error);
+    });
+});
+
+//Post to routes/api
+
+router.post("/save", (req, res) => {
+  const data = req.body;
+
+  const post = new Post(data);
+
+  post.save((error) => {
+    if (error) {
+      res.status(500).json({ msg: "Sorry, internal server errors" });
+      return;
+    }
+    // Post
+    return res.json({
+      msg: "Your data has been saved!",
+    });
+  });
+});
+
+module.exports = router;

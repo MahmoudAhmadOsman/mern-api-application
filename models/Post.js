@@ -16,9 +16,9 @@ const PostSchema = new Schema({
     type: String,
     require: true,
   },
-  date: {
-    type: String,
-    default: Date.now(),
+  publishedDate: {
+    type: Date,
+    default: Date.now,
   },
 });
 

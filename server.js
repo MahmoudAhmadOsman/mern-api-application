@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const moment = require("moment");
 const mongoose = require("mongoose");
 
 const morgan = require("morgan");
@@ -10,7 +11,8 @@ const port = process.env.PORT || 5000;
 
 //Bring the routes
 const indexRouter = require("./routes/index");
-//const postsRouter = require("./routes/api/posts");
+// const postsRouter = require("./routes/api/posts");
+
 const routes = require("./routes/api");
 
 //Database connection
@@ -32,10 +34,10 @@ app.use(express.urlencoded({ extended: false }));
 //Use posts route
 app.use("/", indexRouter); // Home page
 
-//All posts
-//app.use("/api/posts", postsRouter);
-app.use("/api", routes);
-
 //HTTP request logger
 app.use(morgan("tiny"));
+//All posts
+// app.use("/api/posts", postsRouter);
+app.use("/api", routes);
+
 app.listen(port, () => console.log(`Server started on ${port}`));

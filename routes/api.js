@@ -11,16 +11,17 @@ const Post = require("../models/Post");
 //   res.send("All Posts");
 // });
 
-// router.get("/", (req, res) => {
-//   Post.find({})
-//     .then((data) => {
-//       console.log("Data: ", data);
-//       res.json(data);
-//     })
-//     .catch((error) => {
-//       console.log("error: ", error);
-//     });
-// });
+router.get("/", (req, res) => {
+  Post.find({})
+    .sort({ createdAt: "desc" })
+    .then((data) => {
+      console.log("Data: ", data);
+      res.json(data);
+    })
+    .catch((error) => {
+      console.log("error: ", error);
+    });
+});
 
 // //Post to routes/api
 

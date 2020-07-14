@@ -200,6 +200,7 @@ class App extends Component {
                   placeholder="Enter author name"
                   onChange={this.handleFormData}
                   value={this.state.author}
+                  required
                 />
               </div>
 
@@ -216,12 +217,13 @@ class App extends Component {
                   placeholder="Enter post body"
                   onChange={this.handleFormData}
                   value={this.state.body}
+                  required
                 ></textarea>
                 <button className="btn btn-outline-success mt-3 text-uppercase font-weight-bold">
                   Submit
                 </button>
                 <p className="mt-4 text-muted">
-                  <b>Note:</b> Add post and see how the application is
+                  <b>Note:</b> Add a post and see how the demo application is
                   functioning!
                 </p>
               </div>

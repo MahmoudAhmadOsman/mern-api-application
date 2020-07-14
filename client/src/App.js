@@ -157,7 +157,7 @@ class App extends Component {
       <section className="container">
         <h1>
           Blog Post Demo -
-          <small>Built with React.js, Express.js & MongoDB.</small>
+          <small>Built with React.js, Axios, Express.js & MongoDB.</small>
         </h1>
         <span>
           <small className="text-muted">

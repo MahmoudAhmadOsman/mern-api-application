@@ -34,7 +34,7 @@ class App extends Component {
       });
   };
 
-  //Desctruction the function data
+  //Desctructuring the function data
   /*
       handleFormData = ({target}) => {
         const {name, value} = target;

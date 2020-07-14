@@ -219,6 +219,9 @@ class App extends Component {
                 <button className="btn btn-outline-success mt-3 text-uppercase font-weight-bold">
                   Submit
                 </button>
+                <p className="mt-4 text-muted">
+                  <b>Note:</b> Add post and see how the application is function!
+                </p>
               </div>
             </form>
           </div>

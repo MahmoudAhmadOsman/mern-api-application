@@ -95,6 +95,13 @@ class App extends Component {
     });
   };
 
+  //btn alert
+  activatebtnAlert = () => {
+    alert("Bummer! You can't edit this!");
+  };
+  activatebtnDelAlert = () => {
+    alert("Bummer! You can't delete this!");
+  };
   //Display all the posts now
   displayAllPost = (posts) => {
     if (!posts.length) return null;
@@ -104,12 +111,39 @@ class App extends Component {
           <a href="#">{post.title}</a>
         </h3>
         <p>{post.body}</p>
-        <span>
-          <b>Author:</b> {post.author}
-        </span>
-        <p>
-          <b>Published</b>: {moment().format("MM/DD/YYYY")}
-        </p>
+        <div className="author-and-date">
+          <b>
+            <i className="fa fa-user" aria-hidden="true" title="Author"></i>
+          </b>{" "}
+          {post.author}
+          <span className="published">
+            <b>
+              <i
+                className="fa fa-calendar-check-o"
+                aria-hidden="true"
+                title="Published Date"
+              ></i>
+            </b>
+            &nbsp; &nbsp;
+            {moment().format("MM/DD/YYYY")}
+          </span>
+        </div>
+        <div className="action">
+          <a
+            href="#"
+            className="btn btn-outline-info btn-sm text-uppercase mr-3 font-weight-bold"
+            onClick={this.activatebtnAlert}
+          >
+            edit
+          </a>
+          <a
+            href="#"
+            className="btn btn-outline-danger btn-sm text-uppercase font-weight-bold"
+            onClick={this.activatebtnDelAlert}
+          >
+            Delete
+          </a>
+        </div>
         <hr />
       </div>
       // post.publishedDate.format()
@@ -120,7 +154,16 @@ class App extends Component {
     console.log(this.state);
     return (
       <section className="container">
-        <h1>Blog Post</h1> <hr />
+        <h1>
+          Blog Post Demo -
+          <small>Built with React.js, Express.js & MongoDB.</small>
+        </h1>
+        <span>
+          <small className="text-muted">
+            Deleloped by <a href="http://mahmoudosman.com/">Mahmoud Osman</a>
+          </small>
+        </span>
+        <hr />
         <div className="row">
           <div className="col-md-6 post__content" id="post__content">
             <h1 className="text-danger">All Posts</h1> <hr />
@@ -128,7 +171,7 @@ class App extends Component {
             {this.displayAllPost(this.state.posts)}
           </div>
           <div className="col-md-6" id="post_form">
-            <h1 className="text-primary text-center">Post Your Post Here</h1>{" "}
+            <h1 className="text-success text-center">Post Your Post Here</h1>{" "}
             <hr />
             <form method="POST" onSubmit={this.submitHandler}>
               <div className="form-group">
@@ -173,7 +216,7 @@ class App extends Component {
                   onChange={this.handleFormData}
                   value={this.state.body}
                 ></textarea>
-                <button className="btn btn-outline-primary mt-3 text-uppercase font-weight-bold">
+                <button className="btn btn-outline-success mt-3 text-uppercase font-weight-bold">
                   Submit
                 </button>
               </div>

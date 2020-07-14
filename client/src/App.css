@@ -1,5 +1,6 @@
 #post__content {
   background-color: #f4f4f4;
+  border-right: 8px solid #c9c3c3;
 }
 
 #post_form {
@@ -9,4 +10,27 @@
   -moz-box-shadow: 4px 2px 13px 1px #dcdcdc;
   -ms-box-shadow: 4px 2px 13px 1px #dcdcdc;
   -o-box-shadow: 4px 2px 13px 1px #dcdcdc;
+}
+.display_blog_post {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+}
+.author-and-date {
+  background-color: #fff;
+  font-size: 12px;
+}
+.author-and-date .published {
+  margin-left: 15px;
+}
+.author-and-date .fa-calendar-check-o,
+.author-and-date .fa-user {
+  color: #ed563b;
+  font-size: 14px;
+}
+div.action {
+  position: relative;
+
+  float: right;
+  margin-top: 22px;
 }

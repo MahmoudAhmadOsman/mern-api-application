@@ -220,7 +220,8 @@ class App extends Component {
                   Submit
                 </button>
                 <p className="mt-4 text-muted">
-                  <b>Note:</b> Add post and see how the application is function!
+                  <b>Note:</b> Add post and see how the application is
+                  functioning!
                 </p>
               </div>
             </form>

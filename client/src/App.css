@@ -1,0 +1,12 @@
+#post__content {
+  background-color: #f4f4f4;
+}
+
+#post_form {
+  background-color: #fafafa;
+  box-shadow: 4px 2px 13px 1px #dcdcdc;
+  -webkit-box-shadow: 4px 2px 13px 1px #dcdcdc;
+  -moz-box-shadow: 4px 2px 13px 1px #dcdcdc;
+  -ms-box-shadow: 4px 2px 13px 1px #dcdcdc;
+  -o-box-shadow: 4px 2px 13px 1px #dcdcdc;
+}

@@ -115,7 +115,7 @@ class App extends Component {
           <b>
             <i className="fa fa-user" aria-hidden="true" title="Author"></i>
           </b>
-          &nbsp; By &nbsp;
+          &nbsp; Written By &nbsp;
           {post.author}
           <span className="published">
             <b>

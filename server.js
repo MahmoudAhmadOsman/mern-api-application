@@ -16,12 +16,15 @@ const indexRouter = require("./routes/index");
 const routes = require("./routes/api");
 
 //Database connection
-//const DATABASE_URI ="database_link_goes_here";
+//const MONGODB_URI ="database_link_goes_here";
 //mongoose.connect(DATABASE_URI || "mongodb://localhost/database_name"
-mongoose.connect("mongodb://localhost/mernstack2020", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://localhost/mernstack2020",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
 
 mongoose.connection.on("connected", () => {
   console.log("Connected to the MongoDB database!");
@@ -39,5 +42,10 @@ app.use(morgan("tiny"));
 //All posts
 // app.use("/api/posts", postsRouter);
 app.use("/api", routes);
+
+//Check if the connection variable //3
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 
 app.listen(port, () => console.log(`Server started on ${port}`));

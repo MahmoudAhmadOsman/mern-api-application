@@ -10,7 +10,7 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 //Bring the routes
-const indexRouter = require("./routes/index");
+//const indexRouter = require("./routes/index");
 // const postsRouter = require("./routes/api/posts");
 
 const routes = require("./routes/api");
@@ -35,7 +35,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 //Use posts route
-app.use("/", indexRouter); // Home page
+//app.use("/", indexRouter); // Home page
 
 //HTTP request logger
 app.use(morgan("tiny"));

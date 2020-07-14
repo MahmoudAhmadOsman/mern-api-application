@@ -18,7 +18,7 @@ $ npm install
 Please, feel free to contrubute to this and correct me if you see anything wrong about this project or if you have any sugguestions that would also welcomed. 
 
 
-### visit the link here on Heroku: [mern-app-demo1.herokuapp.com](https://mern-app-demo1.herokuapp.com/)
+ Visit the link here on Heroku: [mern-app-demo1.herokuapp.com](https://mern-app-demo1.herokuapp.com/)
  
 
 ### My Website

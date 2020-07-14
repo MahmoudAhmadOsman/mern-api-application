@@ -114,7 +114,8 @@ class App extends Component {
         <div className="author-and-date">
           <b>
             <i className="fa fa-user" aria-hidden="true" title="Author"></i>
-          </b>{" "}
+          </b>
+          By
           {post.author}
           <span className="published">
             <b>
@@ -160,7 +161,7 @@ class App extends Component {
         </h1>
         <span>
           <small className="text-muted">
-            Deleloped by <a href="http://mahmoudosman.com/">Mahmoud Osman</a>
+            Developed by <a href="http://mahmoudosman.com/">Mahmoud Osman</a>
           </small>
         </span>
         <hr />
@@ -171,7 +172,7 @@ class App extends Component {
             {this.displayAllPost(this.state.posts)}
           </div>
           <div className="col-md-6" id="post_form">
-            <h1 className="text-success text-center">Post Your Post Here</h1>{" "}
+            <h1 className="text-success text-center">Enter Your Post Here</h1>
             <hr />
             <form method="POST" onSubmit={this.submitHandler}>
               <div className="form-group">

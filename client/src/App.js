@@ -125,8 +125,9 @@ class App extends Component {
                 title="Published Date"
               ></i>
             </b>
-            &nbsp; &nbsp;
-            {moment().format("MM/DD/YYYY")}
+            {/* post.publishedDate.toDateString() */}
+            &nbsp; &nbsp;{moment(post.publishedDate).format("MM/DD/YYYY")}
+            {/* {moment().format("MM/DD/YYYY")} */}
           </span>
         </div>
         <div className="action">

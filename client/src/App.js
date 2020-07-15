@@ -110,7 +110,7 @@ class App extends Component {
         <h3>
           <a href="#">{post.title}</a>
         </h3>
-        <p>{post.body}</p>
+        <p className="post-details">{post.body}</p>
         <div className="author-and-date">
           <b>
             <i className="fa fa-user" aria-hidden="true" title="Author"></i>
@@ -125,7 +125,6 @@ class App extends Component {
                 title="Published Date"
               ></i>
             </b>
-            {/* post.publishedDate.toDateString() */}
             &nbsp; &nbsp;{moment(post.publishedDate).format("MM/DD/YYYY")}
             {/* {moment().format("MM/DD/YYYY")} */}
           </span>

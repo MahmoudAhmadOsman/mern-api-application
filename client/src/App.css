@@ -14,7 +14,8 @@
 .display_blog_post {
   margin-top: 20px;
   background-color: #fff;
-  padding: 20px;
+  padding: 30px;
+  border: 2px solid #7b787840;
 }
 .display_blog_post p.post-details {
   color: #6b6b6b;

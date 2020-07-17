@@ -39,3 +39,10 @@ div.action {
   float: right;
   margin-top: 22px;
 }
+
+/*Footer */
+.footer {
+  background-color: #333;
+  margin-top: 40px;
+  color: #999;
+}

@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import moment from "moment";
-
+import { useFormik } from "formik";
 import "./App.css";
 import axios from "axios";
+import Footer from "./Footer";
 
 class App extends Component {
   // State for form items
@@ -36,14 +37,14 @@ class App extends Component {
 
   //Desctructuring the function data
   /*
-      handleFormData = ({target}) => {
-        const {name, value} = target;
+    handleFormData = ({target}) => {
+      const {name, value} = target;
 
-          //Now update the state using setState() function
-          this.setState({
-            [name]: value,
-          });
-        };
+        //Now update the state using setState() function
+        this.setState({
+          [name]: value,
+        });
+      };
 */
 
   handleFormData = (e) => {
@@ -52,7 +53,9 @@ class App extends Component {
     const value = target.value;
 
     //Now update the state //Dynamically pass the value of name
-    this.setState({ [name]: value });
+    this.setState({
+      [name]: value,
+    });
   };
 
   // On submit function
@@ -126,7 +129,6 @@ class App extends Component {
               ></i>
             </b>
             &nbsp; &nbsp;{moment(post.publishedDate).format("MM/DD/YYYY")}
-            {/* {moment().format("MM/DD/YYYY")} */}
           </span>
         </div>
         <div className="action">
@@ -229,7 +231,8 @@ class App extends Component {
               </div>
             </form>
           </div>
-        </div>
+        </div>{" "}
+        <Footer />
       </section>
     );
   }

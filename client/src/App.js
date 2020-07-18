@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import moment from "moment";
 import { useFormik } from "formik";
-import "./App.css";
+import "./App.scss";
 import axios from "axios";
 import Footer from "./Footer";
 

@@ -32,6 +32,11 @@ img.dev-img {
     }
   }
 }
+@media (max-width: 767px) {
+  #main_container h1 {
+    font-size: 20px;
+  }
+}
 
 .display_blog_post {
   margin-top: 20px;

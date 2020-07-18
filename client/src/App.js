@@ -157,7 +157,7 @@ class App extends Component {
   render() {
     console.log(this.state);
     return (
-      <section className="container">
+      <section className="container" id="main_container">
         <h1>
           Blog Post Demo -
           <small> Built with React.js, Axios, Express.js & MongoDB.</small>

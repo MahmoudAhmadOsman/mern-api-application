@@ -1,5 +1,14 @@
 $blog_post_color: #7b787840;
 
+img.dev-img {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  line-height: 20px;
+  margin-top: -1px;
+  margin-right: 3px;
+}
+
 #post__content {
   background-color: #f4f4f4;
   border-right: 8px solid #c9c3c3;

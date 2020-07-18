@@ -3,6 +3,7 @@ import moment from "moment";
 import { useFormik } from "formik";
 import "./App.scss";
 import axios from "axios";
+import mahmoud from "./images/mahmoud.jpg";
 import Footer from "./Footer";
 
 class App extends Component {
@@ -163,6 +164,7 @@ class App extends Component {
         </h1>
         <span>
           <small className="text-muted">
+            <img src={mahmoud} className="dev-img" alt="Mahmoud Osman" />
             Developed by <a href="http://mahmoudosman.com/">Mahmoud Osman</a>
           </small>
         </span>
@@ -173,6 +175,7 @@ class App extends Component {
             {/* [posts] is comming from the State at the top */}
             {this.displayAllPost(this.state.posts)}
           </div>
+
           <div className="col-md-6" id="post_form">
             <h1 className="text-success text-center">Enter Your Post Here</h1>
             <hr />

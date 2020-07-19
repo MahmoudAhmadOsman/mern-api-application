@@ -70,6 +70,35 @@ img.dev-img {
   }
 }
 
+// Product page style
+.home__product {
+  position: relative;
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 65px;
+  h1 {
+    float: right;
+    position: absolute;
+    margin-top: -60px;
+  }
+
+  img {
+    max-height: 190px;
+    width: 100%;
+  }
+  .rating {
+    color: #ffd800;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .reviews {
+    color: #30a424;
+    font-weight: bold;
+  }
+}
+
 /*Footer Style */
 .footer {
   background-color: #dedede;

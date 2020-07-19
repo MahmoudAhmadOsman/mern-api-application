@@ -1,10 +1,15 @@
 import React, { Component } from "react";
 import moment from "moment";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 import { useFormik } from "formik";
 import "./App.scss";
 import axios from "axios";
 import mahmoud from "./images/mahmoud.jpg";
-import Footer from "./Footer";
+import Footer from "./components/Footer";
+import Navigation from "./components/Navigation";
+import Products from "./components/Products";
+import Contact from "./components/Contact";
 
 class App extends Component {
   // State for form items
@@ -158,6 +163,17 @@ class App extends Component {
     console.log(this.state);
     return (
       <section className="container" id="main_container">
+        <Router>
+          <div>
+            <Navigation />
+
+            <Switch>
+              <Route path="/" exact />
+              <Route path="/products" component={Products} />
+              <Route path="/contact" component={Contact} />
+            </Switch>
+          </div>
+        </Router>
         <h1>
           Blog Post Demo -
           <small> Built with React.js, Axios, Express.js & MongoDB.</small>
@@ -234,7 +250,8 @@ class App extends Component {
               </div>
             </form>
           </div>
-        </div>{" "}
+        </div>
+
         <Footer />
       </section>
     );

@@ -10,7 +10,7 @@ const Products = () => {
             <div className="col-md-12 col-xs-12">
               <div className="card">
                 <a href={"/product/" + product._id}>
-                  <img src={product.image} alt="{product.image}" />
+                  <img src={product.image} alt={product.name} />
                 </a>
                 <p className="card-text">
                   <h3>{product.name}</h3>

@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import data from "./data";
 const Products = () => {
   return (
-    <section className="home__product">
-      <h1 className="text-center">Products</h1>
+    <section className="container home__product">
+      <h1 className="text-center">Products</h1> <hr />
       {data.products.map((product) => (
         <div className="container">
           <div className="row">

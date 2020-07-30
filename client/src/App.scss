@@ -1,4 +1,7 @@
 $blog_post_color: #7b787840;
+#main_container {
+  margin-bottom: 180px;
+}
 
 img.dev-img {
   width: 18px;
@@ -79,9 +82,9 @@ img.dev-img {
   flex-wrap: nowrap;
   margin-top: 65px;
   h1 {
-    float: right;
     position: absolute;
     margin-top: -60px;
+    border-bottom: 4px solid #ed563b;
   }
 
   img {
@@ -104,6 +107,11 @@ img.dev-img {
   background-color: #dedede;
   margin-top: 40px;
   color: #a29191;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  margin-top: 100%;
   p {
     font-size: 11px;
   }

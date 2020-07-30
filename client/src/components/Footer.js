@@ -4,7 +4,10 @@ const Footer = () => {
   return (
     <section className="footer">
       <div className="container text-center">
-        <p>&copy; Copyright 2020. All Rights Reserved.</p>
+        <p>
+          &copy; Copyright {new Date().getFullYear()}. Mahmoud Osman. All Rights
+          Reserved.
+        </p>
       </div>
     </section>
   );

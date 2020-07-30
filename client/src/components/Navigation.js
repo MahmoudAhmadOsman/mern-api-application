@@ -5,30 +5,10 @@ class Navigation extends Component {
   render() {
     return (
       <section classNameName="main__navigation">
-        {/* <nav className="navbar navbar-expand-lg navbar-dark bg-dark static-to">
-          <ul className="navbar-nav mr-auto">
-            <li>
-              <Link to="/" className="nav-link">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/products" className="nav-link">
-                Prodducts
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" className="nav-link">
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </nav> */}
-
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="/">
+          <Link class="navbar-brand" to="/">
             React Demo App
-          </a>
+          </Link>
           <button
             class="navbar-toggler"
             type="button"

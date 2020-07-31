@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+
 import data from "./data";
 class Products extends Component {
   render() {
@@ -10,19 +12,23 @@ class Products extends Component {
             <div className="row">
               <div className="col-md-12">
                 <div className="card">
-                  <a href={"/product/" + product._id}>
+                  <Link to={"/product/" + product._id}>
                     <img src={product.image} alt={product.name} />
-                  </a>
+                  </Link>
                   <p className="card-text">
-                    <h3>{product.name}</h3>
+                    <Link to={"/product/" + product._id}>
+                      <h3>{product.name}</h3>
+                    </Link>
+
                     <h6 className="text-muted">Category: {product.category}</h6>
                     <span>
                       <b>Brand Name:</b> {product.brand}
                     </span>
                     <div className="card-body">
-                      <div>
+                      <p>
                         <b>Product Details:</b> {product.details}
-                      </div>
+                      </p>
+
                       <div className="product-price">
                         <b>Price:</b> ${product.price}
                       </div>

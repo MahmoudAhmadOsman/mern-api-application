@@ -30,7 +30,7 @@ class Navigation extends Component {
               </li>
               <li class="nav-item">
                 <Link class="nav-link" to="/products">
-                  Prpducts
+                  Products
                 </Link>
               </li>
               <li class="nav-item">

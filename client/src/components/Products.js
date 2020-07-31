@@ -8,7 +8,7 @@ class Products extends Component {
         {data.products.map((product) => (
           <div className="container">
             <div className="row">
-              <div className="col-md-12 col-xs-12">
+              <div className="col-md-12">
                 <div className="card">
                   <a href={"/product/" + product._id}>
                     <img src={product.image} alt={product.name} />

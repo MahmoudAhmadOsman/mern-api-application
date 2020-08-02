@@ -8,7 +8,7 @@ function ProductItems(props) {
 
   return (
     <section className="card">
-      <Link to={"/products/product-details/"}>
+      <Link to={"/product/" + product.id + "/" + product.name}>
         <img className="card-img-top" src={product.image} alt="Tasteful Ts" />
       </Link>
 

@@ -9,11 +9,7 @@ function ProductItems(props) {
   return (
     <section className="card">
       <Link to={"/product/" + product.id}>
-        <img
-          className="card-img-top"
-          src={product.image}
-          alt="{product.name}"
-        />
+        <img className="card-img-top" src={product.image} alt={product.name} />
       </Link>
 
       <div className="card-body">

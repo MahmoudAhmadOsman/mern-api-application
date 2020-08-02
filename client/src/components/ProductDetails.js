@@ -28,7 +28,7 @@ class ProductDetails extends Component {
         <h1>Product Details</h1> <hr />
         <div className="row">
           <div className="col-md-6">
-            <img src="/images/comming-soon.jpg" alt="" />
+            <img src="/images/comming-soon.jpg" alt="{}" />
           </div>
           <div className="com-md-6">
             <p className="text-primary">Product details is comming soon!</p>

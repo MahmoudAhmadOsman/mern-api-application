@@ -1,0 +1,15 @@
+$footer-color: #dedede;
+
+.footer {
+  background-color: $footer-color;
+  margin-top: 40px;
+  color: #a29191;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  margin-top: 100%;
+  p {
+    font-size: 11px;
+  }
+}

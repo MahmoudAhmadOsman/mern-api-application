@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import moment from "moment";
 import mahmoud from "../images/mahmoud.jpg";
@@ -108,7 +109,7 @@ class Home extends Component {
     return posts.map((post, index) => (
       <div key={index} className="display_blog_post">
         <h3>
-          <a href="#">{post.title}</a>
+          <Link to="#">{post.title}</Link>
         </h3>
         <p className="post-details">{post.body}</p>
         <div className="author-and-date">
@@ -129,20 +130,20 @@ class Home extends Component {
           </span>
         </div>
         <div className="action">
-          <a
-            href="#"
+          <Link
+            to="#"
             className="btn btn-outline-info btn-sm text-uppercase mr-3 font-weight-bold"
             onClick={this.activatebtnAlert}
           >
             edit
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            to="#"
             className="btn btn-outline-danger btn-sm text-uppercase font-weight-bold"
             onClick={this.activatebtnDelAlert}
           >
             Delete
-          </a>
+          </Link>
         </div>
         <hr />
       </div>
@@ -154,20 +155,26 @@ class Home extends Component {
     // console.log(this.state);
     return (
       <section className="container" id="main_container">
-        <h1>
-          Blog Post Demo -
-          <small> Built with React.js, Axios, Express.js & MongoDB.</small>
-        </h1>
-        <span>
-          <small className="text-muted">
-            <img src={mahmoud} className="dev-img" alt="Mahmoud Osman" />
-            Developed by <a href="http://mahmoudosman.com/">Mahmoud Osman</a>
-          </small>
-        </span>
-        <hr />
+        <div className="jumbotron">
+          <h1 className="text-info">
+            Blog Post Demo -
+            <small> Built with React.js, Axios, Express.js & MongoDB.</small>
+          </h1>{" "}
+          <span>
+            <small className="text-muted">
+              <img src={mahmoud} className="dev-img" alt="Mahmoud Osman" />
+              Developed by{" "}
+              <a href="http://mahmoudosman.com/" target="_blank">
+                Mahmoud Osman
+              </a>
+            </small>
+          </span>{" "}
+          <hr />
+        </div>
+
         <div className="row">
           <div className="col-md-6 post__content" id="post__content">
-            <h1 className="text-danger">All Posts</h1> <hr />
+            <h1 className="text-danger">Latest Posts</h1> <hr />
             {/* [posts] is comming from the State at the top */}
             {this.displayAllPost(this.state.posts)}
           </div>

@@ -1,7 +1,7 @@
 export default {
   products: [
     {
-      _id: "1",
+      id: "1",
       name: "Tasteful Ts",
       details:
         "Assumenda placeat facere sed autem reiciendis tempora ea. Voluptas aliquam nulla ut sunt. Omnis sed illum culpa totam accusamus.",
@@ -14,7 +14,7 @@ export default {
       numReviews: 6482,
     },
     {
-      _id: "2",
+      id: "2",
       name: "The Tee Tree",
       details:
         "Assumenda placeat facere sed autem reiciendis tempora ea. Voluptas aliquam nulla ut sunt. Omnis sed illum culpa totam accusamus.",
@@ -26,7 +26,7 @@ export default {
       numReviews: 285,
     },
     {
-      _id: "3",
+      id: "3",
       name: "Fitness Pants",
       details:
         "Assumenda placeat facere sed autem reiciendis tempora ea. Voluptas aliquam nulla ut sunt. Omnis sed illum culpa totam accusamus.",
@@ -38,16 +38,28 @@ export default {
       numReviews: 881,
     },
     {
-      _id: "4",
+      id: "4",
       name: "Turbo Pants",
       details:
         "Assumenda placeat facere sed autem reiciendis tempora ea. Voluptas aliquam nulla ut sunt. Omnis sed illum culpa totam accusamus.",
-      category: "Pants",
+      category: "Jeans",
       image: "/images/pant04.png",
       price: 75.12,
       brand: " Ragged",
       rating: 4.9,
       numReviews: 150,
+    },
+    {
+      id: "5",
+      name: "Turbo Jacket",
+      details:
+        "Assumenda placeat facere sed autem reiciendis tempora ea. Voluptas aliquam nulla ut sunt. Omnis sed illum culpa totam accusamus.",
+      category: "Jacket",
+      image: "/images/leather-jacket.png",
+      price: 125.12,
+      brand: " J Jaket",
+      rating: 4.8,
+      numReviews: 8750,
     },
   ],
 };

@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 class Navigation extends Component {
   render() {
     return (
       <section classNameName="main__navigation">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <Link class="navbar-brand" to="/">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <Link className="navbar-brand" to="/">
             React Demo App
           </Link>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -18,29 +18,29 @@ class Navigation extends Component {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <Link class="nav-link" to="/">
-                  Home <span class="sr-only">(current)</span>
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul className="navbar-nav mr-auto">
+              <li className="nav-item active">
+                <Link className="nav-link" to="/">
+                  Home <span className="sr-only">(current)</span>
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/products">
+              <li className="nav-item">
+                <Link className="nav-link" to="/products">
                   Products
                 </Link>
               </li>
-              <li class="nav-item">
-                <Link class="nav-link" to="/contact">
+              <li className="nav-item">
+                <Link className="nav-link" to="/contact">
                   Contact
                 </Link>
               </li>
-              {/* <li class="nav-item dropdown">
+              {/* <li className="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle"
                   href="#"
                   id="navbarDropdown"
                   role="button"
@@ -50,25 +50,31 @@ class Navigation extends Component {
                 >
                   Dropdown
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">
+                <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a className="dropdown-item" href="#">
                     Action
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Another action
                   </a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">
+                  <div className="dropdown-divider"></div>
+                  <a className="dropdown-item" href="#">
                     Something else here
                   </a>
                 </div>
               </li> */}
-              {/* <li class="nav-item">
-                <a class="nav-link disabled" href="#">
+              {/* <li className="nav-item">
+                <a className="nav-link disabled" href="#">
                   Disabled
                 </a>
               </li> */}
             </ul>
+            <div className="shopping-cart">
+              <Link to="#">
+                <i className="fa fa-shopping-cart" aria-hidden="true"></i>
+                <span className="badge">5</span>
+              </Link>
+            </div>
           </div>
         </nav>
       </section>

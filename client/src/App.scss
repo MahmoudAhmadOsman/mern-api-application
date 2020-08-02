@@ -78,8 +78,9 @@ img.dev-img {
   position: relative;
   display: flex;
   width: auto;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  // flex-flow: row wrap;
+  // flex-wrap: nowrap;
+  // justify-content: center;
   margin-top: 65px;
   h1 {
     position: absolute;
@@ -102,17 +103,24 @@ img.dev-img {
   }
 }
 
-/*Footer Style */
-.footer {
-  background-color: #dedede;
-  margin-top: 40px;
-  color: #a29191;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: fixed;
-  margin-top: 100%;
-  p {
-    font-size: 11px;
-  }
+.shopping-cart {
+  position: relative;
+  overflow-x: hidden;
 }
+.shopping-cart .fa-shopping-cart {
+  font-size: 35px;
+  color: #ff0b0b;
+}
+.shopping-cart .badge {
+  font-size: 20px;
+  top: -8px;
+  left: 15px;
+  right: 15px;
+  color: #333;
+  position: absolute;
+  font-weight: bold;
+}
+
+/*Footer Style */
+
+@import "public/css/footer";

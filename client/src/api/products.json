@@ -1,0 +1,59 @@
+[
+  {
+    "id": "1",
+    "name": "Tasteful Ts",
+    "details": "Assumenda placeat facere sed autem reiciendis tempora ea. Voluptas aliquam nulla ut sunt. Omnis sed illum culpa totam accusamus.",
+    "category": "T- Shirt",
+    "image": "/images/shirt01.png",
+
+    "price": 18.69,
+    "brand": " Nike",
+    "rating": 36,
+    "numReviews": 6882
+  },
+  {
+    "id": "2",
+    "name": "The Tee Tree",
+    "details": "Assumenda placeat facere sed autem reiciendis tempora ea. Voluptas aliquam nulla ut sunt. Omnis sed illum culpa totam accusamus.",
+    "category": "Shirt",
+    "image": "/images/shirt02.png",
+    "price": 25.69,
+    "brand": " JP",
+    "rating": 4.6,
+    "numReviews": 482
+  },
+  {
+    "id": "3",
+    "name": "Fitness Pants",
+    "details": "Assumenda placeat facere sed autem reiciendis tempora ea. Voluptas aliquam nulla ut sunt. Omnis sed illum culpa totam accusamus.",
+    "category": "Pants",
+    "image": "/images/pant03.png",
+    "price": 15.69,
+    "brand": " Nike",
+    "rating": 4.8,
+    "numReviews": 382
+  },
+
+  {
+    "id": "4",
+    "name": "Jeans",
+    "details": "Assumenda placeat facere sed autem reiciendis tempora ea. Voluptas aliquam nulla ut sunt. Omnis sed illum culpa totam accusamus.",
+    "category": "Jeans",
+    "image": "/images/pant04.png",
+    "price": 45.69,
+    "brand": " Mia",
+    "rating": 4.7,
+    "numReviews": 982
+  },
+  {
+    "id": "5",
+    "name": "Turbo Jacket",
+    "details": "Assumenda placeat facere sed autem reiciendis tempora ea. Voluptas aliquam nulla ut sunt. Omnis sed illum culpa totam accusamus.",
+    "category": "Jacket",
+    "image": "/images/leather-jacket.png",
+    "price": 45.69,
+    "brand": " Jackware",
+    "rating": 5.9,
+    "numReviews": 1522
+  }
+]

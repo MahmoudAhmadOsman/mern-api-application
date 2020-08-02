@@ -6,7 +6,7 @@
     "category": "T- Shirt",
     "image": "/images/shirt01.png",
 
-    "price": 18.69,
+    "price": 18.75,
     "brand": " Nike",
     "rating": 36,
     "numReviews": 6882
@@ -17,7 +17,7 @@
     "details": "Assumenda placeat facere sed autem reiciendis tempora ea. Voluptas aliquam nulla ut sunt. Omnis sed illum culpa totam accusamus.",
     "category": "Shirt",
     "image": "/images/shirt02.png",
-    "price": 25.69,
+    "price": 25.49,
     "brand": " JP",
     "rating": 4.6,
     "numReviews": 482
@@ -28,7 +28,7 @@
     "details": "Assumenda placeat facere sed autem reiciendis tempora ea. Voluptas aliquam nulla ut sunt. Omnis sed illum culpa totam accusamus.",
     "category": "Pants",
     "image": "/images/pant03.png",
-    "price": 15.69,
+    "price": 15.99,
     "brand": " Nike",
     "rating": 4.8,
     "numReviews": 382
@@ -40,7 +40,7 @@
     "details": "Assumenda placeat facere sed autem reiciendis tempora ea. Voluptas aliquam nulla ut sunt. Omnis sed illum culpa totam accusamus.",
     "category": "Jeans",
     "image": "/images/pant04.png",
-    "price": 45.69,
+    "price": 45.87,
     "brand": " Mia",
     "rating": 4.7,
     "numReviews": 982
@@ -51,7 +51,7 @@
     "details": "Assumenda placeat facere sed autem reiciendis tempora ea. Voluptas aliquam nulla ut sunt. Omnis sed illum culpa totam accusamus.",
     "category": "Jacket",
     "image": "/images/leather-jacket.png",
-    "price": 45.69,
+    "price": 145.99,
     "brand": " Jackware",
     "rating": 5.9,
     "numReviews": 1522

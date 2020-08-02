@@ -13,9 +13,13 @@ function ProductItems(props) {
       </Link>
 
       <div className="card-body">
-        <Link to={"/products/product-details/"}>
+        {/* <Link to={"/products/product-details/"}>
           <h4 className="card-title">{product.name}</h4>
+        </Link> */}
+        <Link to={"/product/" + product.id + "/" + product.name}>
+          <h3>{product.name}</h3>
         </Link>
+
         <h6>
           Category: <span className="text-muted">{product.category}</span>
         </h6>

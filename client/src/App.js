@@ -23,7 +23,7 @@ class App extends Component {
             <Route path="/contact" component={Contact} />
             {/* <Route path="/product/:id" component={ProductDetails} /> */}
 
-            <Route path="/product/:product_id" component={ProductDetails} />
+            <Route path="/product/:id" exact component={ProductDetails} />
           </div>
         </BrowserRouter>
 

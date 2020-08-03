@@ -30,7 +30,7 @@ class ProductDetails extends Component {
           Product details is comming soon!
         </p>
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-md-4 list-group-item">
             <img
               className="prod-details-image"
               src="/images/shirt01.png"

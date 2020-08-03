@@ -22,7 +22,6 @@ class App extends Component {
             <Route path="/products" component={Products} />
             <Route path="/contact" component={Contact} />
             {/* <Route path="/product/:id" component={ProductDetails} /> */}
-
             <Route path="/product/:id" exact component={ProductDetails} />
           </div>
         </BrowserRouter>

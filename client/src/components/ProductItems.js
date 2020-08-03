@@ -11,13 +11,10 @@ function ProductItems(props) {
       <Link to={"/product/" + product.id}>
         <img className="card-img-top" src={product.image} alt={product.name} />
       </Link>
-
+      {/* "/" + product.name */}
       <div className="card-body">
-        {/* <Link to={"/products/product-details/"}>
-          <h4 className="card-title">{product.name}+ "/" + product.name</h4>
-        </Link> */}
         <Link to={"/product/" + product.id}>
-          <h3>{product.name}</h3>
+          <h3 className="card-title">{product.name}</h3>
         </Link>
 
         <h6>

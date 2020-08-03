@@ -103,6 +103,7 @@ img.dev-img {
   }
 }
 
+// Product page
 .shopping-cart {
   position: relative;
   overflow-x: hidden;
@@ -120,7 +121,13 @@ img.dev-img {
   position: absolute;
   font-weight: bold;
 }
-
+#prod_details_page {
+  box-shadow: 5px 6px 8px #cdcdcd;
+  // padding: 8px 50px;
+}
+img.prod-details-image {
+  max-width: 100%;
+}
 /*Footer Style */
 
 @import "public/css/footer";

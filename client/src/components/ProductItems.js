@@ -37,7 +37,7 @@ function ProductItems(props) {
         </p>
         <hr />
         <div className="starts">
-          <p className="spacing">
+          <p>
             <b className="rating">
               {/* <i className="fa fa-star" aria-hidden="true"></i>
               <i className="fa fa-star" aria-hidden="true"></i>

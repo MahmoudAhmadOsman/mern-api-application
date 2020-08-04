@@ -57,7 +57,7 @@ class ProductDetails extends Component {
             <p>
               <b>Price: </b>
               <span className="text-muted">
-                $12.46{" "}
+                $12.46
                 <span className="font-weight-bold text-danger">
                   &nbsp;&nbsp;&nbsp; 30% OFF
                 </span>
@@ -109,7 +109,7 @@ class ProductDetails extends Component {
 
           <div className="col-md-4">
             <h5 className="list-group-item product-review">Product Reviews</h5>
-            <p className="list-group-item">
+            <p className="list-group-item spacing">
               <b className="text-warning">4.6 </b> Stars | <b>482</b> Reviews
             </p>
 

@@ -128,6 +128,14 @@ img.dev-img {
 img.prod-details-image {
   max-width: 100%;
 }
+h5.product-review {
+  letter-spacing: 8px;
+  text-align: center;
+}
+p.spacing {
+  letter-spacing: 6px;
+  text-align: center;
+}
 /*Footer Style */
 
 @import "public/css/footer";

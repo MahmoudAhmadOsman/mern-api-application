@@ -85,11 +85,11 @@ class ProductDetails extends Component {
               <span className="text-muted">
                 Visa, Mastercard, Debit, Credit Card
               </span>
-            </p>{" "}
+            </p>
             <hr />
             <p>
               <i class="fa fa-map-marker text-danger" aria-hidden="true"></i>
-              <b> Estimated Delivery:</b>{" "}
+              <b> Estimated Delivery:</b>
               <span className="text-muted">
                 Aug 23, Tuesday | <i className="text-success">Free</i>
               </span>

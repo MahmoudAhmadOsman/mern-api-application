@@ -10,6 +10,7 @@ import Products from "./components/Products";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
 import ProductDetails from "./components/ProductDetails";
+import PostDetails from "./components/PostDetails";
 
 class App extends Component {
   render() {
@@ -21,6 +22,8 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/products" component={Products} />
             <Route path="/contact" component={Contact} />
+            <Route path="/post/:_id" component={PostDetails} />
+
             {/* <Route path="/product/:id" component={ProductDetails} /> */}
             <Route path="/product/:id" exact component={ProductDetails} />
           </div>

@@ -109,7 +109,7 @@ class Home extends Component {
     return posts.map((post, index) => (
       <div key={index} className="display_blog_post">
         <h3>
-          <Link to="#">{post.title}</Link>
+          <Link to={"/post/" + post._id + "/" + post.title}>{post.title}</Link>
         </h3>
         <p className="post-details">{post.body}</p>
         <div className="author-and-date">

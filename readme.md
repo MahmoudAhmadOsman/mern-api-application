@@ -4,7 +4,7 @@ I built this project with Express.js for backend, React.js for frontend, Bootstr
 To clone this project use this command
 
 ```bash
-$ git clone https://github.com/MahmoudAhmadOsman/full-mern-stack-api.git
+$ git clone https://github.com/MahmoudAhmadOsman/React-Redux-api.git
 ```
 
 ## Then Install All Dependencies

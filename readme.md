@@ -1,5 +1,5 @@
 ## Project
-I built this project with Express.js for backend, React.js for frontend, Bootstrap and MongoDB for database
+I built this project with Express.js for backend, React.js for frontend, Bootstrap for layouts and MongoDB for database
 ## Clone
 To clone this project use this command
 

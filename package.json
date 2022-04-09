@@ -19,7 +19,7 @@
     "concurrently": "^5.2.0",
     "express": "^4.15.3",
     "git": "^0.1.5",
-    "moment": "^2.27.0",
+    "moment": "^2.29.2",
     "mongoose": "^5.9.15",
     "morgan": "~1.9.1",
     "status": "0.0.13"
